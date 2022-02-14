@@ -32,13 +32,32 @@ for (let i = hacker2.length -1; i >=0; i--){
 }
 
 // 3.3
-for (let i = 0 ; 0 < hacker1.length; i++) {
-    if (hacker1[i].length > hacker2[i].length){
+let hacker1= "Conan Doyle";
+
+let hacker2= "Ferro Maljinn"
+
+for (let i = 0 ; i < hacker1.length; i++) {
+    if (hacker1[i] > hacker2[i]){
       console.log("The driver's name goes first.")
   }
-  else if (hacker1[i].length < hacker2[i].length){
+  else if (hacker1[i] < hacker2[i]){
       console.log("Yo, the navigator goes first definitely.")
   }
-  else if (hacker1[i].length = hacker2[i].length){
+  else {
       console.log("What?! You both have the same name?")
   }
+}
+// 3.3 Alternative
+let str = ""
+for (let i = 0 ; i < hacker1.length; i++) {
+    if (hacker1[i] > hacker2[i]){
+      str = "The driver has the longest name, it has XX characters."
+  }
+  else if (hacker1[i] < hacker2[i]){
+    str = "Yo, the navigator goes first definitely."
+  }
+  else {
+    str = "What?! You both have the same name?"
+  }
+}
+console.log(str)
